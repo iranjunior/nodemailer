@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const email = require('./email');
+const email = require('./emails');
+const { validate } = require('../../middleware');
 
-router.use(email);
+router.use(validate, email);
 
 module.exports = router;
