@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
-    "start": "cross-env NODE_ENV=production node ./server.js",
+    "start": "node ./server.js",
     "test": "cross-env NODE_ENV=test jest index.spec.js --watch",
     "test:coverage": "cross-env NODE_ENV=test jest index.spec.js --collect-coverage",
     "validate": "yarn lint && cross-env NODE_ENV=test jest index.spec.js"
