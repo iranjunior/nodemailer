@@ -20,6 +20,7 @@ const swaggerDefinition = {
   basePath: '/',
   schemes: [
     'http',
+    'https',
   ],
 };
 
